@@ -2,8 +2,10 @@ body{
     margin: 0;
     padding: 0;
     /* Evita el scroll */
-    width: 100vw;
-    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 a{
@@ -21,9 +23,9 @@ header{
 
 header .header-icons-container{
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: grid;
-    background-color: #FF8D33;
+    background-color: rgb(255, 102, 0);
 }
 
 header .header-icons-container .icons{
@@ -39,4 +41,31 @@ header .header-icons-container .icons{
 
 header .icons span{
     color: white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80px;
+}
+
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
 }
