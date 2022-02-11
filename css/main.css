@@ -71,22 +71,29 @@ nav .profile-link a{
 }
 
 .home-main{
-    display: grid;grid-template-columns: 1fr 4fr 1fr;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    /* Ocupa el tamaño vertical total de la pantalla */
+    height: calc(100vh - 140px);
+    background-image: url(https://cdn.pixabay.com/photo/2021/09/25/10/08/road-6654573_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-main section{
     display: grid;
     grid-column: 2;
     justify-items: center;
+    height: 350px;
     margin-top: 80px;
 }
 
 .home-main-title{
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: bold;
     /* Espacio entre las letras */
-    letter-spacing: 10px;
-    color: black;
+    letter-spacing: 5px;
+    color: white;
     text-align: center;
 }
